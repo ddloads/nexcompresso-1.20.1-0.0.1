@@ -107,7 +107,7 @@ repositories {
         content {
             includeGroup "curse.maven"
         }
-        }
+    }
 }
 
 

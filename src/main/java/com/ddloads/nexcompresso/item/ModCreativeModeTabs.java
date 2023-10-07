@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.IRON_HAMMER.get());
 
                         pOutput.accept(ModBlocks.COMPRESSED_COBBLESTONE.get());
+                        pOutput.accept(ModBlocks.COMPRESSED_SAND.get());
 
                     })
                     .build());

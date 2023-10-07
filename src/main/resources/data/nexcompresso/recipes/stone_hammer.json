@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MMM",
+    "M#M",
+    " # "
+  ],
+
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "minecraft:cobblestone"
+
+    }
+
+  },
+
+  "result": {
+    "item": "nexcompresso:stone_hammer"
+  },
+  "show_notification": true
+}

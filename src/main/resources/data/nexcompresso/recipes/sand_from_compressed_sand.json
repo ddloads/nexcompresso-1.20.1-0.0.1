@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "nexcompresso:compressed_sand"
+    }
+  ],
+  "result": {
+    "item": "minecraft:sand",
+    "count": 9
+  }
+}
