@@ -1,5 +1,7 @@
 {
   "values": [
+    "nexcompresso:compressed_dirt"
     "nexcompresso:compressed_sand"
+    "nexcompresso:compressed_gravel"
   ]
 }

@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.COMPRESSED_COBBLESTONE.get());
                         pOutput.accept(ModBlocks.COMPRESSED_SAND.get());
+                        pOutput.accept(ModBlocks.COMPRESSED_GRAVEL.get());
+                        pOutput.accept(ModBlocks.COMPRESSED_DIRT.get());
 
                     })
                     .build());

@@ -7,18 +7,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nexcompresso:compressed_cobblestone",
+          "name": "nexcompresso:compressed_gravel",
           "conditions": [
             {
               "condition": "minecraft:match_tool",
               "predicate": {
                 "items": [
-                  "minecraft:wooden_pickaxe",
-                  "minecraft:stone_pickaxe",
-                  "minecraft:iron_pickaxe",
-                  "minecraft:golden_pickaxe",
-                  "minecraft:diamond_pickaxe",
-                  "minecraft:netherite_pickaxe"
+                  "minecraft:wooden_shovel",
+                  "minecraft:stone_shovel",
+                  "minecraft:iron_shovel",
+                  "minecraft:golden_shovel",
+                  "minecraft:diamond_shovel",
+                  "minecraft:netherite_shovel"
                 ]
               }
             }
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gravel",
+          "name": "minecraft:dirt",
           "functions": [
             {
               "function": "minecraft:set_count",

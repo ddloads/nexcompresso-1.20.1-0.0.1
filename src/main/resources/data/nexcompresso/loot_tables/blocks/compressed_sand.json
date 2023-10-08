@@ -2,20 +2,47 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nexcompresso:compressed_sand"
+          "name": "nexcompresso:compressed_sand",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:wooden_shovel",
+                  "minecraft:stone_shovel",
+                  "minecraft:iron_shovel",
+                  "minecraft:golden_shovel",
+                  "minecraft:diamond_shovel",
+                  "minecraft:netherite_shovel"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exdeorum:dust",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 9
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["nexcompresso:stone_hammer"]
+              }
+            }
+          ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
-  ],
-  "random_sequence": "nexcompresso:blocks/compressed_sand"
+  ]
 }

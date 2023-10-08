@@ -1,11 +1,15 @@
 {
   "item.nexcompresso.stone_hammer": "Stone Hammer",
   "item.nexcompresso.iron_hammer": "Iron Hammer",
+  "item.nexcompresso.diamond_hammer": "Diamond Hammer",
+  "item.nexcompresso.netherite_hammer": "Netherite Hammer",
 
 
 
   "block.nexcompresso.compressed_cobblestone": "Compressed Cobblestone",
   "block.nexcompresso.compressed_sand": "Compressed Sand",
+  "block.nexcompresso.compressed_gravel": "Compressed Gravel",
+  "block.nexcompresso.compressed_dirt": "Compressed Dirt",
 
 
   "creativetab.nexcompresso_tab": "Nex Compresso Tab"
