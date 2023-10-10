@@ -12,6 +12,11 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> MINEABLE_WITH_HAMMERS = tag("mineable_with_hammers");
+        public static final TagKey<Block> NEEDS_SKY_STONE_TOOL = tag("mineable_with_hammers");
+
+
+
+
 
 
 
@@ -23,7 +28,7 @@ public class ModTags {
     }
     public static class Items {
 
-
+        public static final TagKey<Item> Hammers = tag("hammers");
 
 
         private static TagKey<Item> tag(String name) {

@@ -23,7 +23,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        this.dropSelf(ModBlocks.COMPRESSED_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.COMPRESSED_GRAVEL.get());
         this.dropSelf(ModBlocks.COMPRESSED_DIRT.get());
+        this.dropSelf(ModBlocks.COMPRESSED_SAND.get());
+
 
     }
 /*

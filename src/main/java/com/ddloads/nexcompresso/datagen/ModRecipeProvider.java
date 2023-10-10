@@ -33,6 +33,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("MMM")
                 .pattern("MMM")
                 .define('M', Blocks.COBBLESTONE)
+                .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.COBBLESTONE, 9)
                 .requires(ModBlocks.COMPRESSED_COBBLESTONE.get())

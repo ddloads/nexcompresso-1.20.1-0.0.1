@@ -18,8 +18,12 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STONE_HAMMER.get()))
                     .title(Component.translatable("creativetab.nexcompresso_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModItems.SKY_STONE_HAMMER.get());
                         pOutput.accept(ModItems.STONE_HAMMER.get());
                         pOutput.accept(ModItems.IRON_HAMMER.get());
+                        pOutput.accept(ModItems.SKYBERRY.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
 
                         pOutput.accept(ModBlocks.COMPRESSED_COBBLESTONE.get());
                         pOutput.accept(ModBlocks.COMPRESSED_SAND.get());
