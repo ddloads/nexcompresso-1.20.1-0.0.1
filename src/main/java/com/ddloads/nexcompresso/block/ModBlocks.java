@@ -26,6 +26,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT), UniformInt.of(0, 1)));
     public static final RegistryObject<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
             () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND), UniformInt.of(0, 1)));
+    public static final RegistryObject<Block> SKY_STONE_BLOCK = registerBlock("sky_stone_block",
+            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND), UniformInt.of(0, 1)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

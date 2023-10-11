@@ -2,10 +2,9 @@ package com.ddloads.nexcompresso.item;
 
 import com.ddloads.nexcompresso.NexCompresso;
 import com.ddloads.nexcompresso.custom.FuelItem;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,7 +42,12 @@ public class ModItems {
 
     //Food Items
     public static final RegistryObject<Item> SKYBERRY = ITEMS.register("sky_berry",
-            () -> new Item(new Item.Properties().food(ModFoods.SKYBERRY)));
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(5)
+                            .saturationMod(0.2F).fast().build())
+            ));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

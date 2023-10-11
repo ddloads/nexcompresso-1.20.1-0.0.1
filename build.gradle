@@ -122,6 +122,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:jade-324717:4768593")
     implementation fg.deobf("curse.maven:ex-deorum-901420:4768031")
+    implementation fg.deobf("curse.maven:mouse-tweaks-60089:4581240")
 
 }
 
