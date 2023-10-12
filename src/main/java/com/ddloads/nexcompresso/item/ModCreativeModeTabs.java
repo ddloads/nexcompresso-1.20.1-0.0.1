@@ -19,16 +19,28 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.nexcompresso_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModItems.SKY_STONE_HAMMER.get());
+                        //Ingredients
+                        pOutput.accept(ModItems.SKY_STONE.get());
+
+                        //Tools
                         pOutput.accept(ModItems.STONE_HAMMER.get());
                         pOutput.accept(ModItems.IRON_HAMMER.get());
+                        pOutput.accept(ModItems.DIAMOND_HAMMER.get());
+                        pOutput.accept(ModItems.SKY_STONE_HAMMER.get());
+
+                        //Food
                         pOutput.accept(ModItems.SKYBERRY.get());
+
+                        //Fuel
                         pOutput.accept(ModItems.PINE_CONE.get());
 
+                        //Blocks
                         pOutput.accept(ModBlocks.COMPRESSED_COBBLESTONE.get());
                         pOutput.accept(ModBlocks.COMPRESSED_SAND.get());
                         pOutput.accept(ModBlocks.COMPRESSED_GRAVEL.get());
                         pOutput.accept(ModBlocks.COMPRESSED_DIRT.get());
+                        pOutput.accept(ModBlocks.SKY_STONE_BLOCK.get());
+                        pOutput.accept(ModBlocks.DUST.get());
 
                     })
                     .build());

@@ -2,7 +2,6 @@ package com.ddloads.nexcompresso.block;
 
 import com.ddloads.nexcompresso.NexCompresso;
 import com.ddloads.nexcompresso.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -19,15 +18,17 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, NexCompresso.MOD_ID);
 
     public static final RegistryObject<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE), UniformInt.of(0, 1)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
     public static final RegistryObject<Block> COMPRESSED_GRAVEL = registerBlock("compressed_gravel",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL), UniformInt.of(0, 1)));
+            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
     public static final RegistryObject<Block> COMPRESSED_DIRT = registerBlock("compressed_dirt",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT), UniformInt.of(0, 1)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND), UniformInt.of(0, 1)));
+            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> SKY_STONE_BLOCK = registerBlock("sky_stone_block",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND), UniformInt.of(0, 1)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+    public static final RegistryObject<Block> DUST = registerBlock("dust",
+            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -36,7 +37,7 @@ public class ModBlocks {
         return toReturn;
     }
     public static class CompressedFallingBlock extends FallingBlock {
-        public CompressedFallingBlock(Properties properties, UniformInt uniformInt) {
+        public CompressedFallingBlock(Properties properties) {
             super(properties);
         }
     }

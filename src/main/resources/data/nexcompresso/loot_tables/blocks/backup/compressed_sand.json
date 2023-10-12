@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nexcompresso:compressed_sand",
+          "name": "nexcompresso:compressed_cobblestone",
           "conditions": [
             {
               "condition": "minecraft:match_tool",
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "exdeorum:dust",
+          "name": "minecraft:gravel",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -37,7 +37,12 @@
             {
               "condition": "minecraft:match_tool",
               "predicate": {
-                "items": ["nexcompresso:stone_hammer"]
+                "items": [
+                  "nexcompresso:stone_hammer",
+                  "nexcompresso:iron_hammer",
+                  "nexcompresso:diamond_hammer",
+                  "nexcompresso:sky_stone_hammer"
+                ]
               }
             }
           ]

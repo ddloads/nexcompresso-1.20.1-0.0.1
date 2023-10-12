@@ -40,11 +40,11 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                }
-            }
+            //mods {
+              //  "${mod_id}" {
+             //       source sourceSets.main
+            //    }
+           // }
         }
 
         client {
@@ -123,6 +123,9 @@ dependencies {
     implementation fg.deobf("curse.maven:jade-324717:4768593")
     implementation fg.deobf("curse.maven:ex-deorum-901420:4768031")
     implementation fg.deobf("curse.maven:mouse-tweaks-60089:4581240")
+    implementation fg.deobf("curse.maven:kubejs-238086:4774726")
+    implementation fg.deobf("curse.maven:rhino-416294:4735056")
+    implementation fg.deobf("curse.maven:architectury-api-419699:4663010")
 
 }
 

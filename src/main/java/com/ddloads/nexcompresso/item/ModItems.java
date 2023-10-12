@@ -5,12 +5,12 @@ import com.ddloads.nexcompresso.custom.FuelItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import static com.ddloads.nexcompresso.item.ModToolTiers.HAMMER;
+import static com.ddloads.nexcompresso.item.ModToolTiers.SKY_STONE_TIER;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -22,18 +22,35 @@ public class ModItems {
 
 
     //Tool Items
-    public static final RegistryObject<Item> SKY_STONE_HAMMER = ITEMS.register("sky_stone_hammer",
-            () -> new PickaxeItem(ModToolTiers.SKY_STONE, 4, 2, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> STONE_HAMMER = (ITEMS.register("stone_hammer",
             () -> new PickaxeItem(
-                    HAMMER,
-                    2,
-                    2,
+                    Tiers.STONE,
+                    4,
+                    1,
+                    new Item.Properties()
+            )));
+    public static final RegistryObject<PickaxeItem> IRON_HAMMER = (ITEMS.register("iron_hammer",
+            () -> new PickaxeItem(
+                    Tiers.IRON,
+                    5,
+                    1,
+                    new Item.Properties()
+            )));
+    public static final RegistryObject<PickaxeItem> DIAMOND_HAMMER = (ITEMS.register("diamond_hammer",
+            () -> new PickaxeItem(
+                    Tiers.DIAMOND,
+                    6,
+                    0.9F,
+                    new Item.Properties()
+            )));
+    public static final RegistryObject<PickaxeItem> SKY_STONE_HAMMER = (ITEMS.register("sky_stone_hammer",
+            () -> new PickaxeItem(
+                    SKY_STONE_TIER,
+                    7,
+                    1,
                     new Item.Properties()
             )));
 
-    public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
-            () -> new Item(new Item.Properties()));
 
     //Fuel Items
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
