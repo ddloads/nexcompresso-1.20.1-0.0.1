@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "building",
   "key": {
-    "M": {
+    "D": {
       "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
-    "MMM",
-    "MMM",
-    "MMM"
+    "DDD",
+    "DDD",
+    "DDD"
   ],
   "result": {
     "item": "nexcompresso:compressed_cobblestone"

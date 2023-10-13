@@ -2,43 +2,20 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nexcompresso:compressed_cobblestone",
-          "conditions": [
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "tag": "nexcompresso:hammers"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "nexcompresso:dust",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 9
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "tag": "nexcompresso:hammers"
-              }
-            }
-          ]
+          "name": "nexcompresso:compressed_sand"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "nexcompresso:blocks/compressed_sand"
 }

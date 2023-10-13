@@ -41,6 +41,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.COMPRESSED_DIRT.get());
                         pOutput.accept(ModBlocks.SKY_STONE_BLOCK.get());
                         pOutput.accept(ModBlocks.DUST.get());
+                        pOutput.accept(ModBlocks.CRUDE_SIEVE.get());
 
                     })
                     .build());

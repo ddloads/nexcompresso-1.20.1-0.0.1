@@ -20,6 +20,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockwithitem(ModBlocks.COMPRESSED_DIRT);
         blockwithitem(ModBlocks.COMPRESSED_SAND);
         blockwithitem(ModBlocks.COMPRESSED_GRAVEL);
+        blockwithitem(ModBlocks.SKY_STONE_BLOCK);
+        blockwithitem(ModBlocks.DUST);
+        blockwithitem(ModBlocks.CRUDE_SIEVE);
 
     }
     private void blockwithitem(RegistryObject<Block> blockRegistryObject) {

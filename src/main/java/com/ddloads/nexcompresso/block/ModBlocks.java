@@ -17,18 +17,27 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, NexCompresso.MOD_ID);
 
-    public static final RegistryObject<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
-    public static final RegistryObject<Block> COMPRESSED_GRAVEL = registerBlock("compressed_gravel",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
-    public static final RegistryObject<Block> COMPRESSED_DIRT = registerBlock("compressed_dirt",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
-    public static final RegistryObject<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+
+    //Basic Blocks
+
     public static final RegistryObject<Block> SKY_STONE_BLOCK = registerBlock("sky_stone_block",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+    public static final RegistryObject<Block> CRUDE_SIEVE = registerBlock("crude_sieve",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+    public static final RegistryObject<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> COMPRESSED_DIRT = registerBlock("compressed_dirt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+
+    //Blocks that act like sand and fall when placed
+    public static final RegistryObject<Block> COMPRESSED_GRAVEL = registerBlock("compressed_gravel",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
+    public static final RegistryObject<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> DUST = registerBlock("dust",
-            () -> new CompressedFallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -3,7 +3,7 @@
   "item.nexcompresso.sky_stone": "Skystone",
 
 
-  "item.nexcompresso.pine_cone": "Pinecone",
+  "item.nexcompresso.pine_cone": "Pine cone",
 
 
   "item.nexcompresso.stone_hammer": "Stone Hammer",
@@ -18,6 +18,8 @@
   "block.nexcompresso.compressed_gravel": "Compressed Gravel",
   "block.nexcompresso.compressed_dirt": "Compressed Dirt",
   "block.nexcompresso.dust": "Dust",
+  "block.nexcompresso.sky_stone_block": "Skystone Block",
+  "block.nexcompresso.crude_sieve": "Crude Sieve",
 
 
   "creativetab.nexcompresso_tab": "Nex Compresso Tab"

@@ -28,6 +28,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.COMPRESSED_DIRT.get());
         this.dropSelf(ModBlocks.COMPRESSED_SAND.get());
         this.dropSelf(ModBlocks.SKY_STONE_BLOCK.get());
+        this.dropSelf(ModBlocks.DUST.get());
+        this.dropSelf(ModBlocks.CRUDE_SIEVE.get());
 
 
     }
