@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:sand"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "item": "nexcompresso:compressed_sand"
+  },
+  "show_notification": true
+}

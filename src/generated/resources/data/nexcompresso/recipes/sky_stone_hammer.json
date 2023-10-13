@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "nexcompresso:sky_stone"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "MHM",
+    " H "
+  ],
+  "result": {
+    "item": "nexcompresso:sky_stone_hammer"
+  },
+  "show_notification": true
+}

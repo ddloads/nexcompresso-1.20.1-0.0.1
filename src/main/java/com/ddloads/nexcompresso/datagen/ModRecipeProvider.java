@@ -23,6 +23,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        // Add the recipe to uncraft some items
+        addShapelessRecipe(pWriter, "decompressed_cobblestone", Items.COBBLESTONE, ModBlocks.COMPRESSED_COBBLESTONE.get(), 9);
+
+       //addShapelessRecipe(pWriter, Items.COBBLESTONE, ModBlocks.COMPRESSED_COBBLESTONE.get(), 9, "cobble_from_compressed_cobblestone");
+
         // For Compressed Dust Block: Assuming it's made from 9 Dust items in a 3x3 pattern
         addShapedRecipe(pWriter,RecipeCategory.BUILDING_BLOCKS , ModBlocks.COMPRESSED_COBBLESTONE.get(), "DDD", "DDD", "DDD", 'D', Items.COBBLESTONE);
         addShapedRecipe(pWriter,RecipeCategory.BUILDING_BLOCKS , ModBlocks.COMPRESSED_GRAVEL.get(), "DDD", "DDD", "DDD", 'D', Items.GRAVEL);
@@ -73,12 +78,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
     }
 
-    private void addShapelessRecipe(Consumer<FinishedRecipe> pWriter,RecipeCategory pCategory, ItemLike result, ItemLike... ingredients) {
-        ShapelessRecipeBuilder.shapeless(pCategory,result)
-                .requires(ingredients)
-                .unlockedBy(getHasName(result), has(result))
-                .save(pWriter);
+    private void addShapelessRecipe(Consumer<FinishedRecipe> pWriter, String recipeName, ItemLike pRequire, ItemLike pResult, int pCount){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, pRequire, pCount)
+                .requires(pResult)
+                .unlockedBy(getHasName(pRequire), has(pRequire))
+                .save(pWriter, NexCompresso.MOD_ID + ":" + recipeName);
     }
+
+/*    private void addShapelessRecipe(Consumer<FinishedRecipe> pWriter,  ItemLike pRequire, ItemLike pResult, int pCount){
+        String pRecipeName = RecipeName;
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,pRequire,pCount)
+                .requires(pResult)
+                .unlockedBy(getHasName(pRequire), has(pRequire))
+                .save(pWriter, pRecipeName);
+    }*/
 
     private void addToolRecipe(Consumer<FinishedRecipe> pWriter, ItemLike pResult, char handle, ItemLike handleItem, char head, ItemLike headItem) {
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,pResult)

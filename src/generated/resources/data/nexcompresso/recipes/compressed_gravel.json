@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "item": "nexcompresso:compressed_gravel"
+  },
+  "show_notification": true
+}

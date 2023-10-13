@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "MHM",
+    " H "
+  ],
+  "result": {
+    "item": "nexcompresso:diamond_hammer"
+  },
+  "show_notification": true
+}
